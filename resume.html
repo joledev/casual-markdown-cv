@@ -1,61 +1,160 @@
 <!DOCTYPE html>
-<title>Resume</title>
+<title>Joel Ernesto López Verdugo – Full Stack Developer Resume</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/casualwriter/casual-markdown/dist/casual-markdown.css">
 <script src="https://cdn.jsdelivr.net/gh/casualwriter/casual-markdown/dist/casual-markdown.js"></script>
-<style>  
-  body { line-height:1.5; margin:auto; padding:3px; max-width:1024px; display:none; FONT-FAMILY:"Segoe UI",ARIAL; }
-  h1  { font-size:200%; padding:16px; border:1px solid lightgrey; BACKGROUND:#f0f0f0; }
-  h2  { border-bottom:1px solid grey; padding:2px }
+<style>
+  body {
+    line-height: 1.4;
+    margin: auto;
+    padding: 3px;
+    max-width: 1024px;
+    display: none;
+    font-family: "Segoe UI", Arial;
+    font-size: 13px;
+  }
+  h1 { font-size: 160%; padding: 12px; border: 1px solid lightgrey; background: #f0f0f0; }
+  h2 { font-size: 110%; border-bottom: 1px solid grey; padding: 2px; margin-top: 1.5em; }
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .skills div {
+    /* Cada caja ocupará un 25% menos el gap */
+    flex: 1 1 calc(25% - 1rem);
+    min-width: 150px;  /* para que no se achiquen demasiado en pantallas angostas */
+    box-sizing: border-box;
+  }
 </style>
 <body onload="document.body.innerHTML=md.html(document.body.innerHTML); document.body.style.display='block';">
-<!--======= COPY ABOVE CODE AS HEADER, THEN FOLLOW WITH RESUME CONTENT IN MARKDOWN FORMAT =========-->
 
-<img style="float:right;border-radius:50%;width:70px;padding:6px" src="avatar-man.jpg" />
-
-<span style="float:right;padding:6px"> 
-  someone@email.com <br> mobile: +852 xxxxxxxx <br> Nationality: Chinese
+<span style="float:right;padding-right:3rem">
+  joel.ernesto.lopez.verdugo@uabc.edu.mx<br>
+  +52 646 125 3797<br>
+  Ensenada, Baja California, Mexico
 </span>
 
-# Casualwriter  
+# Joel Ernesto López Verdugo  
+### Full Stack Developer | Software Architect | SaaS & Cloud Solutions
 
-## Executive Summary
+## Professional Summary
 
-* 10 years project/team management experience
-* PMP, OCP, AWS Certification
-* Hand-on experience in oracle database
-* Proficient in JavaScript, Java, Powerbuilder
+Software Engineer with 4+ years of experience **architecting scalable cloud-native solutions, microservices ecosystems, and full-stack applications** across SaaS, fintech, and e-commerce domains. Expert in **cost optimization through serverless architectures** (reducing infrastructure costs by 60-70%), **system modernization**, and **high-performance API development**. Proven track record leading engineering teams, implementing CI/CD pipelines, and delivering enterprise-grade solutions with focus on **security, scalability, and developer productivity**. Proficient in distributed systems, containerization, and agile methodologies.
 
-## Working Experience
+## Technical Skills
 
-#### Current Company (Project Manager, 2015/08 - present) 
+| **Backend & APIs**                                                          | **Frontend & Mobile**                                          | **Cloud & Infrastructure**                                                           | **Architecture & Practices**                                                    |
+| --------------------------------------------------------------------------- | -------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------- |
+| Java (Spring Boot), PHP (Laravel, Symfony), Node.js, TypeScript, Go, Python | React, Next.js, Flutter, React Native, HTMX, Tailwind          | AWS (Lambda, S3, DynamoDB, Route53), Docker, Podman, Kubernetes, Terraform, OpenShift | Microservices, API-First Design, Event-Driven Architecture, Serverless, DevOps |
+| REST APIs, GraphQL, WebSockets                                               | HTML5/CSS3, Bootstrap, Responsive Design                        | GitHub Actions, GitLab CI/CD, Jenkins, Nginx, PM2                                     | System Design, Cloud Cost Optimization, Security Best Practices                 |
+| MySQL, PostgreSQL, MongoDB, Redis, SQL Server, DynamoDB                      | SEO Optimization, Web Performance, Mobile-First Development     | VPS Management (Hostinger), DNS Management, Reverse Proxies                           | SOLID, DDD, TDD, Code Review, Technical Documentation                            |
 
-* Lead team of 10 to oversee conception, requirement gathering, documentation and rollout.
-* Conduct troubleshooting, analysis and support. Gather user feedback, document bugs and change requests.
+## Professional Experience
 
-#### Second Company (System Analyst, 2011/06 - 2015/07) 
+<div class="section-spacing"></div>
 
-* Led team of 5 for application development
-* Coordinated with developers, support staff and vendors across Hong Kong, China, Taiwan
+**tuplanderetiro.mx** — Full Stack Developer (SaaS Platform)  
+<span class="job-period">Jun 2025 – Oct 2025 · Remote</span>
 
-#### My first Company (Analyst Programmer, 2005/01 - 2011/05)
+- Architected and delivered a **CRM and webinar management SaaS platform** using React + Vite, Node.js, and MongoDB, **eliminating manual workflows** and improving operational efficiency by 50%.
+- **Led a team of 3 developers** (1 designer, 1 frontend developer), coordinating sprints, code reviews, and deployment strategies.
+- Implemented **Stripe recurring billing system**, reducing payment failures by 35% and automating subscription management for 200+ customers.
+- Built **dynamic admin dashboard** with campaign management, analytics, and SEO tools, increasing user engagement by 40%.
+- Designed and deployed **CI/CD pipelines with GitHub Actions** to VPS using PM2 cluster mode, **reducing deployment time from 2 hours to 15 minutes** (87.5% improvement).
+- Implemented **rate-limiting, API versioning, and security policies** ensuring 99.9% uptime during product launch.
 
-* Develop multiple applications using Javascript, Java, PHP, Powerbuilder, Oracle
+---
 
-## Projects
+**AforeCoppel** — Software Architect  
+<span class="job-period">Nov 2023 – May 2025 · Remote</span>
 
-* [Casual-Markdown](https://github.com/casualwriter/powerpage) - a lightweight markdown parser
-* [Powerpage](https://github.com/casualwriter/powerpage) - a lightweight browser for html applications
+- **Led a 5-engineer team** through multi-phase migration of legacy Node.js/PHP services to **Java 21 + Spring Boot microservices**, deployed to AWS using Podman and OpenShift, **improving system performance by 45%**.
+- Architected **Python-based Anti-Money Laundering (AML) analytics platform** with real-time risk scoring, reducing compliance review time by 60%.
+- **Mentored junior developers** on Spring Boot architecture, containerization, and DevSecOps practices, accelerating team onboarding by 30%.
+- Implemented **automated testing suites** with JUnit, Mockito, and Checkmarx, achieving **>85% code coverage** and reducing production bugs by 50%.
+- Introduced **Infrastructure as Code** and CI/CD workflows, **cutting deployment time by 60%** and eliminating manual configuration errors.
+- Created comprehensive **technical documentation, architecture diagrams, and runbooks**, improving knowledge transfer and system maintainability.
 
-## Education & Qualifications
+---
 
-* AWS Certification (2021/12)
-* Oracle Certified Professional (2020/02)
-* Project Management Professional (PMP) (2018/10)
-* Bachelor of Computer Science (Sep 2004)
-* The Chinese University of Hong Kong (2000 - 2004)
+**Cooperativa La Purísima** — Full Stack Developer  
+<span class="job-period">Jun 2023 – Aug 2023 · Hybrid</span>
 
-## Misc. Information
+- Designed and deployed **Stripe-powered e-commerce platform** with Envia.com shipping integration, **increasing online sales by 35%**.
+- Built **admin console** for order management, inventory tracking, and role-based access control, improving operational visibility.
+- Optimized **SEO strategy and content marketing**, increasing organic traffic by 45% and improving search rankings for key product categories.
+- Implemented **responsive UI components** and mobile-first design, reducing cart abandonment rate by 20%.
 
-* Languages: English (good), Cantonese (fluent/native), Mandarin (good)
-* Availability: 1 month's notice
+---
+
+**Sociedad Coop. Leyes de Reforma** — Full Stack Developer (SaaS)  
+<span class="job-period">Jan 2023 – Jun 2023 · Hybrid</span>
+
+- Architected **containerized microservices ecosystem** (Laravel, TypeScript, Docker) for inventory, supply chain, and sales operations.
+- **Reduced infrastructure costs by 60-70%** by migrating to **AWS serverless architecture** (Lambda, DynamoDB) for asynchronous workloads serving 200-500 users with <10% concurrent usage.
+- Developed **Flutter tablet applications** for field operations with offline-first architecture and secure REST API integration.
+- Optimized **MySQL database schemas** with proper indexing and query optimization, **reducing inventory processing time by 40%**.
+- Migrated legacy marketing site to **WordPress**, empowering non-technical team to manage content independently.
+- **Improved landing page load times by 3x** through code splitting, lazy loading, and CDN integration.
+- **Increased Mercado Libre conversion rates by 25%** by implementing quick-access links and optimizing product listings from landing pages.
+
+---
+
+**Cooperativa Emancipación** — Full Stack Developer  
+<span class="job-period">Sep 2022 – Dec 2022 · Hybrid</span>
+
+- Built **Symfony-based e-commerce platform** with custom checkout flow and Uber delivery integration via Envia.com API.
+- Implemented **automated invoicing system** compliant with SAT (Mexican tax authority) regulations, reducing billing errors by 90%.
+- Created **customer dashboard** with purchase history and delivery tracking, improving customer satisfaction scores by 30%.
+- Introduced **Docker Compose development environments**, standardizing team workflows and reducing onboarding time by 50%.
+
+---
+
+**Sociedad Coop. Progreso** — Full Stack Developer (SaaS)  
+<span class="job-period">Jan 2022 – Aug 2022 · Hybrid</span>
+
+- Modernized monolithic PHP application into **Dockerized microservices platform**, improving scalability and reducing downtime by 80%.
+- **Optimized cloud infrastructure costs by 65%** through serverless architecture and resource management for 200-500 user base.
+- Designed **QR-enabled tracking dashboards** for real-time shipment visibility, improving supply chain transparency.
+- Integrated **Nextcloud** for secure collaboration, document management, and internal communications.
+- Built **Flutter mobile apps** for warehouse management with role-based permissions and offline sync capabilities.
+
+---
+
+**Bocana Adventure** — Web Developer  
+<span class="job-period">Aug 2021 – Dec 2021 · Hybrid</span>
+
+- Developed **responsive booking platform** with real-time availability and payment processing, **increasing online reservations by 20%**.
+- Implemented **on-page SEO optimizations** and UX improvements, growing organic traffic by 35%.
+- Created **admin panel** with maintenance ticketing, analytics dashboards, and multi-user access controls.
+
+---
+
+**UABC** — Software Developer (Internships)  
+<span class="job-period">Multiple Terms: Mar 2021 – Jul 2021, May 2022 – Jun 2022 · Hybrid</span>
+
+- Built **Spring Boot + JasperReports microservice** for automated diploma PDF generation with REST endpoints, reducing manual processing by 100%.
+- Developed **menu scheduling and ordering system** with PayPal integration and OAuth authentication, improving cafeteria efficiency by 30%.
+- Introduced **unit testing frameworks** for validation and quality assurance.
+
+## Community & Professional Development
+
+- **Active member** of AWS User Group Ensenada – Regular participant in technical talks and networking events
+- **Contributor** to GDG Community Dev Tijuana – Engaged in Google Developer Group activities and workshops
+- **Continuous learner** in cloud-native technologies, distributed systems, and software architecture patterns
+
+## Education
+
+**Bachelor of Engineering in Computer Engineering**  
+Autonomous University of Baja California (UABC)
+
+## Certifications
+
+- **Google IT Support Professional Certificate** – Coursera
+- **Complete PHP, SQL, OOP, MVC, Laravel, Symfony & WordPress** – Udemy
+
+## Languages
+
+- **Spanish** (Native)
+- **English** (Professional working proficiency – B2/C1)
